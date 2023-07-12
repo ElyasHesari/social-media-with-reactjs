@@ -8,6 +8,8 @@ import FavoriteBorderIcon from "@mui/icons-material/FavoriteBorder";
 import AddCircleOutlineIcon from "@mui/icons-material/AddCircleOutline";
 import MenuIcon from "@mui/icons-material/Menu";
 import "./Sidenav.css";
+import { Link } from "react-router-dom";
+
 function Sidenav() {
   return (
     <div className="sidenav">
@@ -17,37 +19,39 @@ function Sidenav() {
         alt=""
       />
       <button className="sidenav__button">
-          <HomeIcon />
-          <span>Home</span>
+        <HomeIcon />
+        <span>Home</span>
       </button>
       <button className="sidenav__button">
-          <SearchIcon />
-          <span>Search</span>
+        <SearchIcon />
+        <span>Search</span>
       </button>
       <button className="sidenav__button">
-          <ExploreIcon />
-          <span>Explore</span>
+        <ExploreIcon />
+        <span>Explore</span>
       </button>
       <button className="sidenav__button">
-          <SlideshowIcon />
-          <span>Reels</span>
+        <SlideshowIcon />
+        <span>Reels</span>
       </button>
-      <button className="sidenav__button">
+      <Link to="/message">
+        <button className="sidenav__button">
           <ChatIcon />
           <span>Message</span>
+        </button>
+      </Link>
+      <button className="sidenav__button">
+        <FavoriteBorderIcon />
+        <span>Notifications</span>
       </button>
       <button className="sidenav__button">
-          <FavoriteBorderIcon />
-          <span>Notifications</span>
-      </button>
-      <button className="sidenav__button">
-          <AddCircleOutlineIcon />
-          <span>Create</span>
+        <AddCircleOutlineIcon />
+        <span>Create</span>
       </button>
       <div className="sidenav__more">
         <button className="sidenav__button">
-            <MenuIcon />
-            <span>More</span>
+          <MenuIcon />
+          <span>More</span>
         </button>
       </div>
     </div>

@@ -1,27 +1,9 @@
 import React from "react";
-import Homepage from "./Homepage";
-import Login from "./Login";
-import Message from "./Message";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import "./App.css";
+import { BrowserRouter as Router, Link } from "react-router-dom";
 
-function App() {
-  const isLoggedIn = false;
+function Login() {
   return (
-    // <Homepage />
-    <React.Fragment>
-      <Router>
-        <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/homepage" element={<Homepage />} />
-          <Route path="/message" element={<Message />} />
-        </Routes>
-      </Router>
-    </React.Fragment>
-  );
-
-  /* <Router>
-      <div class="login-form">
+    <div class="login-form">
       <h2>Login Application</h2>
       <form>
         <div class="form-group">
@@ -51,10 +33,7 @@ function App() {
         </button>
       </form>
     </div>
-    <Routes>
-      <Route exact path="/homepage" element={<Homepage />} />
-    </Routes>
-    </Router> */
+  );
 }
 
-export default App;
+export default Login;

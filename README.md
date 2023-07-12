@@ -1,3 +1,10 @@
+در این پروژه سعی شده است تا با استفاده از واسط کاربری شبیه به اینستاگرام تعدادی پست به طور داینامیک در صفحه مشاهده گردند. اینکار با استفاده از تعریف state در Timeline component انجام شده است. برای بخش کناری صفحه نیز از Sidenav components نیز استفاده شده است.
+در این پروژه همچنین از پکیج react-router-dom برای ایجاد یک single page application (SPA) استفاده شده است به این صورت که در حالت ریشه ما در کامپوننت Login هستیم و پس از لاگین شدن به کامپوننت Homepage که تقریبا کامپننت اصلی است وارد می شویم.
+همچنین برای قسمت چت نیز از sidenav استفاده شده است و زمانی که روی دکمه Message کلیک شود نیز با استفاده از react-router-dom به کامپوننت چت یعنی کامپوننت Message وارد می شود.
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
